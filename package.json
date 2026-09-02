@@ -1,0 +1,13 @@
+{
+  "name": "fixed-overtime-calculator",
+  "version": "1.0.0",
+  "description": "総支給額から、定額残業手当（固定残業代）の金額とみなし残業時間を相互に逆算するCLIツールです。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
