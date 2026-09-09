@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { calculate } from "./overtime.js";
 import { buildReport } from "./report.js";
 import { askTotal, askMonthlyHours, askOvertimeHours } from "./cli.js";
