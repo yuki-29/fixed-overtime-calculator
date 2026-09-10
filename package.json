@@ -24,5 +24,11 @@
   },
   "dependencies": {
     "enquirer": "^2.4.1"
-  }
+  },
+  "files": [
+    "index.js",
+    "overtime.js",
+    "report.js",
+    "cli.js"
+  ]
 }
