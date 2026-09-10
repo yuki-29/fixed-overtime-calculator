@@ -1,5 +1,8 @@
 # fixed-overtime-calculator
 
+This is a CLI tool that calculates the amount of the fixed overtime allowance (fixed overtime pay) based on the total gross pay.
+This tool is designed for use in Japan and is based on Japanese labor laws.
+
 総支給額から、定額残業手当（固定残業代）の金額を計算するCLIツールです。
 
 ## 使い方
