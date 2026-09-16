@@ -1,4 +1,5 @@
 import enquirer from "enquirer";
+const OVERTIME_LIMIT = 60;
 
 export const askTotal = async () => {
   const prompt = new enquirer.Input({
@@ -26,7 +27,13 @@ export const askMonthlyHours = async () => {
 export const askOvertimeHours = async () => {
   const prompt = new enquirer.Input({
     message: "みなし残業時間を入力してください",
-    validate: validatePositiveNumber,
+    validate: (value) => {
+      const result = validatePositiveNumber(value);
+      if (result !== true) return result;
+      if (Number(value) > OVERTIME_LIMIT)
+        return `${OVERTIME_LIMIT}時間以下で入力してください。`;
+      return true;
+    },
   });
   const answer = await prompt.run();
   return Number(answer);
