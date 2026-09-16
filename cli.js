@@ -1,4 +1,5 @@
 import enquirer from "enquirer";
+
 const OVERTIME_LIMIT = 60;
 
 export const askTotal = async () => {
