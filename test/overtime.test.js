@@ -26,7 +26,12 @@ test("内訳の合計が総支給額に一致する", () => {
 });
 
 test("基本給が100円単位に丸められる", () => {
-  assert.strictEqual(result.baseSalary % 100, 0);
+  const result = calculate({
+    total: 300000,
+    monthlyHours: 160,
+    overtimeHours: 20,
+  });
+  assert.strictEqual(result.baseSalary, 259400);
 });
 
 test("割増単価が時給の1.25倍になる", () => {
