@@ -37,7 +37,7 @@ export const askOvertimeHours = async () => {
 const validatePositiveNumber = (value) => {
   const number = Number(value);
   if (!Number.isFinite(number)) return "数値を入力してください。";
-  if (number <= 0) return "0より大きい金額を入力してください。";
+  if (number <= 0) return "0より大きい数値を入力してください。";
   return true;
 };
 
