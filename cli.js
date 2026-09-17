@@ -41,7 +41,7 @@ const validatePositiveNumber = (value) => {
   return true;
 };
 
-const validateOvertimeHours = (value) => {
+export const validateOvertimeHours = (value) => {
   const number = Number(value);
   const result = validatePositiveNumber(number);
   if (result !== true) return result;
