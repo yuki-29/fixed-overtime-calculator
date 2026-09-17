@@ -1,13 +1,34 @@
 {
   "name": "fixed-overtime-calculator",
   "version": "1.0.0",
-  "description": "総支給額から、定額残業手当（固定残業代）の金額とみなし残業時間を相互に逆算するCLIツールです。",
+  "description": "総支給額から、定額残業手当（固定残業代）の金額を計算するCLIツールです。",
+  "bin": {
+    "fixed-overtime-calculator": "index.js"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test",
+    "lint": "prettier --check . && eslint .",
+    "fix": "prettier --write . && eslint --fix ."
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "type": "module"
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.9.1",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.6"
+  },
+  "dependencies": {
+    "enquirer": "^2.4.1"
+  },
+  "files": [
+    "index.js",
+    "overtime.js",
+    "report.js",
+    "cli.js"
+  ]
 }
